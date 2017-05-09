@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>SCdraw</title>
+    <script src="../lib/jquery.js"></script>
+    <script src="js/SCdrag3.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/SCdrag.css">
+</head>
+<body onselectstart="return false" style="height: 500px;border: 1px solid #aaa;background: #3f3f3f">
+    <div id="box"></div>
+    <div id="box2"></div>
+</body>
+<script>
+    $('#box').SCdragger({
+        rotatable: true,
+        scalable: true,
+        contextmenu: true,
+        stretchable: true,
+        restrictIn: true,
+    });
+    $('#box2').SCdragger({
+        rotatable: true,
+        scalable: true,
+        contextmenu: true,
+        stretchable: true,
+        restrictIn: true,
+    });
+</script>
+</html>

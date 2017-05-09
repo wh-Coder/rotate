@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>SCdrag-Demo</title>
+    <script src="js/jquery.js"></script>
+    <script src="js/SCdrag3.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/SCdrag.css">
+    <style type="text/css" media="screen">
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    
+    body {
+        background: #f3f3f3;
+    }
+    
+    h2,
+    h3,
+    h4 {
+        text-align: center;
+        width: 600px;
+        margin: 0 auto;
+    }
+    
+    .wrap {
+        position: relative;
+        width: 600px;
+        height: 400px;
+        margin: 0 auto;
+        background: #3BB3E0;
+        border: 4px solid #2561B4;
+        overflow: hidden;
+    }
+    </style>
+</head>
+
+<body onselectstart="return false">
+    <!--     <div class="SCcontextmenu">
+        <div class="menuItem delete">删除</div>
+        <div class="menuItem reRotate">清除旋转</div>
+        <div class="menuItem reRatio">还原比例12</div>
+    </div> -->
+    <h2>图片</h2>
+    <h3>图片对象(大小默认)、旋转、缩放、拉伸、限制框内（边缘）、右键功能</h3>
+    <div class="wrap">
+        <!--         <div class="box1">
+            <div class="tools">
+                <span class="tool tl"></span>
+                <span class="tool tc"></span>
+                <span class="tool tr"></span>
+                <span class="tool cl"></span>
+                <span class="tool cr"></span>
+                <span class="tool bl"></span>
+                <span class="tool bc"></span>
+                <span class="tool br"></span>
+                <span class="toolrot tt"></span>
+                <span class="toolrot bb"></span>
+                <span class="toolrot ll"></span>
+                <span class="toolrot rr"></span>
+            </div>
+        </div> -->
+        <!-- <div class="box1"></div> -->
+        <div class="box2"></div>
+    </div>
+    <h2>文本(未做)</h2>
+    <h3>文本对象、旋转、拉伸、限制框内</h3>
+    <div class="wrap">
+        <div class="box3"></div>
+    </div>
+    <script type="text/javascript">
+    
+    // $('.box1').SCdragger({
+    //     height: 100,
+    //     rotatable: true,
+    //     // scalable: true,
+    //     contextmenu: false,
+    //     // stretchable: true,
+    //     restrictIn: true,
+    // });
+    $('.box2').SCdragger({
+        src: 'img/1.jpg',
+        rotatable: true,
+        scalable: true,
+        contextmenu: true,
+        stretchable: true,
+        restrictIn: true,
+    });
+    $('.box3').SCdragger({
+        type: 'text',
+        rotatable: true,
+        stretchable: true,
+    });
+    </script>
+</body>
+
+</html>

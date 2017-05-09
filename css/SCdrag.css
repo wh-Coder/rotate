@@ -1,0 +1,117 @@
+.SCtools {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #fff;
+}
+
+.SCtools .tool {
+    position: absolute;
+    display: inline-block;
+    border: 4px solid #fff;
+    border-radius: 50%;
+}
+
+.SCtools .toolrot {
+    position: absolute;
+    display: inline-block;
+    /* background: red; */
+    /* opacity: .2; */
+    cursor: url('rotate20.ico'), pointer;
+}
+
+.SCtools .tl {
+    top: -4px;
+    left: -4px;
+    cursor: nw-resize;
+}
+
+.SCtools .tc {
+    top: -4px;
+    left: 50%;
+    margin-left: -4px;
+    cursor: n-resize;
+}
+
+.SCtools .tr {
+    top: -4px;
+    right: -4px;
+    cursor: ne-resize;
+}
+
+.SCtools .cl {
+    top: 50%;
+    left: -4px;
+    margin-top: -4px;
+    cursor: w-resize;
+}
+
+.SCtools .cr {
+    top: 50%;
+    right: -4px;
+    margin-top: -4px;
+    cursor: e-resize;
+}
+
+.SCtools .bl {
+    bottom: -4px;
+    left: -4px;
+    cursor: sw-resize;
+}
+
+.SCtools .bc {
+    bottom: -4px;
+    left: 50%;
+    margin-left: -4px;
+    cursor: s-resize;
+}
+
+.SCtools .br {
+    bottom: -4px;
+    right: -4px;
+    cursor: se-resize;
+}
+
+.SCtools .tt {
+    width: 100%;
+    height: 40px;
+    top: -50px;
+}
+
+.SCtools .bb {
+    width: 100%;
+    height: 40px;
+    bottom: -50px;
+}
+
+.SCtools .ll {
+    height: 100%;
+    width: 40px;
+    left: -50px;
+}
+
+.SCtools .rr {
+    height: 100%;
+    width: 40px;
+    right: -50px;
+}
+
+.SCcontextmenu {
+    position: absolute;
+    width: 100px;
+}
+
+.SCcontextmenu .menuItem {
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+    background: #eee;
+    border: 1px solid #ccc;
+    border-top: none;
+    line-height: 2;
+}
+
+.SCcontextmenu .menuItem:hover {
+    background: #444;
+    color: #fff;
+}
