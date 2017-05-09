@@ -1,6 +1,6 @@
 ; //wh
 (function ($, window, document, undefined) {
-  // console.log('2017-2-7');
+  // console.log('2017-2-8');
   var saveObj = {};
   //定义Dragger的构造函数
   var Dragger = function (ele, opt) {
